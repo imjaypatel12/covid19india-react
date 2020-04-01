@@ -29,7 +29,7 @@ function TimeSeries(props) {
 
   useEffect(() => {
     setLogMode(props.logMode);
-    setUpdate(update + 1);
+    setUpdate((u) => u + 1);
   }, [props.logMode]);
 
   const graphData = useCallback(
